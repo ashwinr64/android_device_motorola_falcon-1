@@ -102,14 +102,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=280
 
 # GPS
+PRODUCT_COPY_FILES += \
+    device/motorola/falcon/gps/etc/gps.conf:system/etc/gps.conf \
+    device/motorola/falcon/gps/etc/flp.conf:system/etc/flp.conf \
+    device/motorola/falcon/gps/etc/izat.conf:system/etc/izat.conf \
+    device/motorola/falcon/gps/etc/quipc.conf:system/etc/quipc.conf \
+    device/motorola/falcon/gps/etc/sap.conf:system/etc/sap.conf
+
 PRODUCT_PACKAGES += \
     gps.msm8226
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.gps.agps_provider=1 \
-    ro.qc.sdk.izat.premium_enabled=1 \
-    ro.qc.sdk.izat.service_mask=0x5 \
-    persist.gps.qc_nlp_in_use=1 \
+    persist.gps.qc_nlp_in_use=0 \
     persist.loc.nlp_name=com.qualcomm.services.location
 
 # Hardware
