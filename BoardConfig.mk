@@ -186,7 +186,7 @@ TW_NO_EXFAT_FUSE := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 
 PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+device/motorola/falcon/twrp.fstab:recovery/root/etc/twrp.fstab
 
 #Qcom Hardware Variant
 TARGET_QCOM_AUDIO_VARIANT := caf-bfam
