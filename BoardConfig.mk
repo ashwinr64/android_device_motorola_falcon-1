@@ -187,3 +187,8 @@ TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+
+#Qcom Hardware Variant
+TARGET_QCOM_AUDIO_VARIANT := caf-bfam
+TARGET_QCOM_DISPLAY_VARIANT := caf-bfam
+TARGET_QCOM_MEDIA_VARIANT := caf-bfam
