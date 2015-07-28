@@ -77,6 +77,7 @@ TARGET_PROVIDES_GPS_LOC_API := true
 TARGET_USES_C2D_COMPOSITION := true
 
 # Kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/motorola/falcon/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
 KERNEL_DEFCONFIG := falcon_defconfig
 TARGET_KERNEL_SOURCE := kernel
